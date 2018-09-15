@@ -1,0 +1,20 @@
+/*
+
+    font-family: 'Open Sans', sans-serif;
+
+*/
+.main_wrapper{
+    font-family: 'Open Sans', sans-serif;
+    background-color: #fafafa;
+}
+.heading_tag h1{
+    font-size: 30px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 900;
+    text-align: center;
+    color: #686868;
+    margin: 90px 0 40px;
+}
+.plan_box_holder{
+
+}
