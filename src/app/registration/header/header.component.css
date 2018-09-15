@@ -5,6 +5,7 @@
 */
 .header_wrapper{
     font-family: 'Open Sans', sans-serif;
+    background-color: #fafafa;
 }
 .logo_container{
     background-color: #686868;
@@ -108,4 +109,7 @@
 }
 .flow_line_pointer_wrapper li.active a strong{
     color: #8f2de2;
+}
+@media (min-width:320px) and (max-width:570px){
+    
 }
