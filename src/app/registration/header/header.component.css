@@ -25,8 +25,8 @@
     width: 100%;
     left: 0;
     right: 0;
-    top: 50%;
-    margin-top: -16px;
+    top: 0;
+    margin-top: 25px;
 }
 .flow_line_pointer_wrapper{
     display: flex;
@@ -51,8 +51,8 @@
     width: 0;
     background-color: #8f2de2;
     visibility: hidden;
-    top: 50%;
-    margin-top: -16px;
+    top: 0;
+    margin-top: 25px;
     z-index: 0;
     transition: all ease-in-out 0.3s;
 }
@@ -111,5 +111,47 @@
     color: #8f2de2;
 }
 @media (min-width:320px) and (max-width:570px){
-    
+    .flow_line_pointer_wrapper{
+        max-width: 100%;
+    }
+    .flow_line_wrapper::before,.flow_line_pointer_wrapper li::before, .flow_line_pointer_wrapper li.active::before{
+        margin-top: 25px;
+        top: 0;
+    }
+    .flow_line_pointer_wrapper li a strong {
+        font-size: 11px;
+    }
+    .logo a{
+        display: table;
+        margin: 0 auto;
+    }
+}
+@media (min-width:320px) and (max-width:570px){
+    .flow_line_pointer_wrapper{
+        max-width: 100%;
+    }
+    .flow_line_pointer_wrapper li a strong {
+        font-size: 11px;
+    }
+    .logo a{
+        display: table;
+        margin: 0 auto;
+    }
+}
+@media (min-width:571px) and (max-width:767px){
+    .flow_line_pointer_wrapper{
+        max-width: 100%;
+    }
+    .flow_line_pointer_wrapper li a strong {
+        font-size: 13px;
+    }
+    .logo a{
+        display: table;
+        margin: 0 auto;
+    }
+}
+@media (min-width:768px) and (max-width:959px){
+    .flow_line_pointer_wrapper{
+        max-width: 80%;
+    }
 }

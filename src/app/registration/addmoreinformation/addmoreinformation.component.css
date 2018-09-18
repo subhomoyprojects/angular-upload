@@ -1,0 +1,106 @@
+/*
+
+    font-family: 'Open Sans', sans-serif;
+
+*/
+.main_wrapper{
+    font-family: 'Open Sans', sans-serif;
+    background-color: #fafafa;
+    padding-bottom: 160px;
+}
+.heading_tag h1{
+    font-size: 30px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 900;
+    text-align: center;
+    color: #686868;
+    margin: 90px 0 40px;
+}
+.add_more_info_form_holder{
+    background-color: #fff;
+    padding: 56px;
+    box-shadow: 5px 0 38px rgba(0,0,0,0.04);
+}
+.plus_icon{
+    background:url(/assets/images/sprite.png) no-repeat;
+    background-position: -86px 0;
+    width:27px;
+    height: 27px;
+    display: inline-block;
+    margin-right:15px;
+    vertical-align: middle;
+}
+.upload_file{
+    box-shadow: 5px 0 38px rgba(157,157,157,0.28);
+    padding: 10px 25px;
+    background-color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    color: #8f2de2;
+    text-transform: capitalize;
+    display: table;
+    margin: 0 auto 40px;
+    cursor: pointer;
+}
+.upload_file span{
+    display: inline-block;
+    vertical-align: middle
+}
+.img_and_video_thumbnel_holder{
+    display: table;
+    margin: 0 auto;
+    padding: 0 0 40px;
+    width:100%;
+    max-width:75%;
+    text-align: center;
+    border-bottom: 1px solid #dfdfdf;
+}
+.thumbnel_holder{
+    position: relative;
+    width:100%;
+    max-width:118px;
+    max-height: 118px;
+    min-height: 118px;
+    border-radius: 6px;
+    border:2px solid rgba(255,255,255,0.5);
+    box-shadow: 5px 0 38px rgba(157,157,157,0.40);
+    display: inline-block;
+}
+.thumbnel_holder > img{
+    max-width: 100%;
+    max-height: 100%;
+    width: 100%;
+    height: 100%;
+    border-radius: 6px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+}
+.thumbnel_holder > img{
+    max-width: 100%;
+    max-height: 100%;
+    width: 100%;
+    height: 100%;
+    border-radius: 6px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+}
+.close_btn{
+    width:41px;
+    height: 41px;
+    position: absolute;
+    background: url(/assets/images/sprite.png) no-repeat;
+    background-position: -123px 0;
+    cursor: pointer;
+    border:none;
+    display: block;
+    top: -16px;
+    right: -14px;
+}
+.thumbnel_holder{
+    margin-right: 15px;
+}
+.thumbnel_holder:last-child{
+    margin-right:0;
+}

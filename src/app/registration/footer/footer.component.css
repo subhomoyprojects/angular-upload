@@ -6,6 +6,7 @@
 .footer_wrapper{
     font-family: 'Open Sans', sans-serif;
     border-top: 1px solid #ededed;
+    background-color: #fafafa;
 }
 .copy_right{
     font-size: 14px;

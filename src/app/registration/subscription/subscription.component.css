@@ -130,3 +130,16 @@
     background-color: #8f2de2;
     box-shadow: 5px 0px 38px rgba(143,45,226,0.40);
 }
+@media (min-width:320px) and (max-width:959px){
+    .heading_tag h1{
+        margin: 40px 0;
+    }
+    .main_wrapper {
+        padding-bottom: 30px;
+    }
+}
+@media (min-width:960px) and (max-width:1199px){
+    .plan_description{
+        min-height: 420px;
+    }
+}
