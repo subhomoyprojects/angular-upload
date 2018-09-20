@@ -41,6 +41,17 @@ input[type=number] {
  .disabled,a.disabled,button.disabled,input[type="submit"].disabled{
     cursor: not-allowed;
  }
+ .modal-backdrop.show {
+    opacity: .6;
+}
+.modal-body{
+    padding: 0.5rem;
+}
+.modal-dialog {
+    max-width: 700px;
+    margin: 3rem auto 1.75rem;
+    width: 90%;
+}
  /*-=-=-=-==-==-=-=-=-=-=-=-=-==-==-==-= Common Library -=-=-------------=-=-*/
 
 /* Signup page step1 */

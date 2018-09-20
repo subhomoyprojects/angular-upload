@@ -402,22 +402,6 @@
     max-width: 535px;
     margin: 0 auto;
 }
-.fancy_box{
-    position: relative;
-    height: 400px;
-}
-.fancy_box > img{
-    max-width:100%;
-    max-height: 100%;
-    width: 100%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-}
-.modal_controller .modal-body{
-    padding: 0.5rem;
-}
 @media (min-width:320px) and (max-width:767px){
     .heading_tag h1{
         margin: 40px 0;

@@ -11,7 +11,7 @@
                       <input id="uploadFile" style="display: none;" type="file">
                       <button type="button" class="upload_file" onclick="document.getElementById('uploadFile').click();"><span class="plus_icon"></span><span>Add Pictures</span></button>
                     </div>
-                    <ngb-carousel class="img_and_video_slider_controller">
+                    <ngb-carousel class="img_and_video_slider_controller" [interval]=0>
                       <ng-template ngbSlide>
                         <div class="img_and_video_thumbnel_holder">
                           <div class="thumbnel_holder" (click)="open(open_big_image)">
@@ -65,7 +65,7 @@
                       <input id="uploadFile" style="display: none;" type="file">
                       <button type="button" class="upload_file margin_top_40" onclick="document.getElementById('uploadFile').click();"><span class="plus_icon"></span><span>Add Videos</span></button>
                     </div>
-                    <ngb-carousel class="img_and_video_slider_controller">
+                    <ngb-carousel class="img_and_video_slider_controller" [interval]=0>
                       <ng-template ngbSlide>
                         <div class="img_and_video_thumbnel_holder">
                           <div class="thumbnel_holder" (click)="open(open_big_image)">
@@ -183,7 +183,7 @@
             
             <!-- Image Goes Here -->
             <div class="fancy_box">
-              <img src="/assets/images/signup_bg.jpg" alt="Big Image">
+              <img src="/assets/images/thumbnel_1.jpg" alt="Big Image">
             </div>
             <!-- Image Goes Here -->
           </div>
