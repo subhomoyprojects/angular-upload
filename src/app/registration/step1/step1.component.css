@@ -4,14 +4,32 @@
 .logo_holder{
     margin-top: 30px;
 }
-.common_holder{
+.signup_form_holder{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    max-width: 60%;
+    min-height: 440px;
+}
+/* .common_holder{
     display: table;
     width:100%;
     max-width: 60%;
     margin:10px auto;
+} */
+.logo_wrapper{
+    display: table;
+    width:100%;
+    max-width: 60%;
+    margin:20px auto;
+    position: absolute;
+    left: 0;
+    right: 0;
 }
 .signup_form_holder{
-    margin-top: 50px;
+    margin-top: 30px;
 }
 .heading_tag h1{
     font-size: 24px;
@@ -158,6 +176,7 @@
     background-size: 100% 100%;
     width: 70px;
 }
+
 @media (min-width:320px) and (max-width:575px){
 .signup_form_side::before, 
 .signup_description_side::before {
@@ -169,20 +188,21 @@
 .min_hight_100{
     min-height: auto;
 }
-.signup_description_holder{
+.signup_description_holder,.signup_form_holder{
     position: relative;
     top: auto;
     left: auto;
     transform: translate(0,0);
     max-width: 100%;
     margin-top: 20px;
+    min-height: auto;
 }
-.copy_right_holder{
+.copy_right_holder,.logo_wrapper{
     position: relative;
     max-width: 100%;
 }
 .logo_holder{
-    margin: 30px auto 0;
+    margin: 0 auto;
     display: table;
 }
 .signup_image_bg{
@@ -219,6 +239,22 @@
 .signup_form_controller{
     margin-bottom: 30px;
 }
+.signup_form_holder{
+    position: relative;
+    top: auto;
+    left: auto;
+    transform: translate(0,0);
+    max-width: 100%;
+    margin-top: 20px;
+    min-height: auto;
+}
+.logo_wrapper{
+    position: relative;
+    max-width: 100%;
+}
+.logo_holder{
+    margin-top: 0;
+}
     
 }
 @media (min-width:768px) and (max-width:959px){
@@ -226,21 +262,23 @@
 .signup_description_side::before {
     display: none;
 }
-.common_holder{
+/* .common_holder{
     max-width: 80%;
-}
-.min_hight_100{
-    min-height: auto;
+} */
+.common_holder{
+    max-width: 100%;
 }
 .signup_description_holder,
-.copy_right_holder{
+.copy_right_holder,
+.logo_wrapper,
+.signup_form_holder{
     max-width: 90%;
 }
 .signup_text li {
     line-height: 22px;
 }
 .min_hight_100{
-    min-height: 100vh;
+    min-height: 959px;
 }
 .signup_image_bg{
     background-size: cover;
@@ -257,21 +295,21 @@
 .signup_image_bg{
     background-size: cover;
 }
-.common_holder{
+/* .common_holder{
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%,-50%);
-}
+} */
 
 }
 @media (min-width:1200px) and (max-width:1360px){
-.common_holder{
+/* .common_holder{
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%,-50%);
-}
+} */
 }
 @media (min-width:1440px) and (max-width:1920px){
 .signup_form_side::before{
@@ -282,12 +320,13 @@
     width: 109px;
     height: 764px;
 }
-.common_holder{
+/* .common_holder{
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%,-50%);
-}
+} */
+
 .signup_text li{
     margin-bottom: 40px;
 }
