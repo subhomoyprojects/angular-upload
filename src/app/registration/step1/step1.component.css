@@ -75,6 +75,7 @@
     font-weight: 600;
     font-size: 18px;
     transition: all ease-in-out 0.3s;
+    cursor: pointer;
 }
 .next_btn:hover,
 .next_btn:active,
@@ -187,6 +188,9 @@
 .signup_image_bg{
     background-size: cover;
 }
+.signup_form_controller{
+    margin-bottom: 30px;
+}
 }
 @media (min-width:576px) and (max-width:767px){
 .signup_form_side::before, 
@@ -211,6 +215,9 @@
 }
 .signup_image_bg{
     background-size: cover;
+}
+.signup_form_controller{
+    margin-bottom: 30px;
 }
     
 }
@@ -237,12 +244,6 @@
 }
 .signup_image_bg{
     background-size: cover;
-}
-.common_holder{
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%,-50%);
 }
     
 }

@@ -20,6 +20,8 @@
     background-color: #fff;
     padding: 56px;
     box-shadow: 5px 0 38px rgba(0,0,0,0.04);
+    max-width: 650px;
+    margin:0 auto;
 }
 .basic_details_form_holder::-webkit-input-placeholder { /* WebKit, Blink, Edge */
     color: #686868;
@@ -180,8 +182,8 @@
         margin-right: 27px;
     }
 }
-@media (min-width:1800px) and (max-width:1920px){
+/* @media (min-width:1800px) and (max-width:1920px){
     .basic_details_form_holder li .half {
         width: 48%;
     }
-}
+} */

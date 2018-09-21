@@ -18,6 +18,7 @@ import { FooterComponent } from './registration/footer/footer.component';
 import { BasicdetailsComponent } from './registration/basicdetails/basicdetails.component';
 import { AdddrinksComponent } from './registration/adddrinks/adddrinks.component';
 import { AddmoreinformationComponent } from './registration/addmoreinformation/addmoreinformation.component';
+import { AddoffersComponent } from './registration/addoffers/addoffers.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -27,7 +28,8 @@ import { AddmoreinformationComponent } from './registration/addmoreinformation/a
     FooterComponent,
     BasicdetailsComponent,
     AdddrinksComponent,
-    AddmoreinformationComponent
+    AddmoreinformationComponent,
+    AddoffersComponent
   ],
   imports: [
     BrowserModule,
