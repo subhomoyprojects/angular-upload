@@ -6,7 +6,7 @@
               <div class="col-sm-12 col-md-10 col-lg-8 col-xl-6 offset-md-1 offset-lg-2 offset-xl-3 heading_tag">
                 <h1>Add Offers</h1>
                 <div class="add_offers_form_holder">
-                  <form method="POST">
+                  <form method="POST" class="relative">
                     <h2>Add some exciting offers</h2>
                     <ul class="margin_top_40 form_holder">
                       <li><input type="text" placeholder="Offer Title*" required></li>
@@ -60,18 +60,99 @@
                             <input placeholder="To" type="text" required placeholder="To">
                           </div>
                         </li>
-                        <li>
+                        <li class="no_border">
                           <label class="width_100">Offer NOT Valid on Dates*</label>
-                          <div class="calender_icon">
-                            <input placeholder="From" type="text" required placeholder="Form">
-                          </div>
+                          <ul class="offer_not_valid_holder">
+                            <li>
+                              <div class="calender_icon">
+                                <input placeholder="From" type="text" required placeholder="Form">
+                              </div>
+                            </li>
+                            <!-- Repet Li -->
+                            <!-- <li>
+                              <div class="calender_icon">
+                                <input placeholder="From" type="text" required placeholder="Form">
+                              </div>
+                            </li> -->
+                            <!-- Repet Li -->
+                          </ul>
+                        </li>
+                        <li class="no_border text-right">
+                          <button type="button" class="add-another-date">Add Another Date</button>
                         </li>
                     </ul>
                     <div class="file_type_controller">
                       <input id="uploadFile" style="display: none;" type="file">
                       <button type="button" class="upload_file" onclick="document.getElementById('uploadFile').click();"><span class="plus_icon"></span><span>Upload Offer Images</span></button>
                     </div>
-                    <a routerLink="/registration/step2/addmoreinfo" class="button_custom violet_btn">Next</a>
+                    <ngb-carousel class="img_and_video_slider_controller" [interval]=0>
+                      <ng-template ngbSlide>
+                        <div class="img_and_video_thumbnel_holder border-bottom-none">
+                          <div class="thumbnel_holder" (click)="open(open_big_image)">
+                            <img src="../assets/images/thumbnel_1.jpg" alt="Thumbnel">
+                            <button type="button" class="close_btn"></button>
+                          </div>
+                          <div class="thumbnel_holder" (click)="open(open_big_image)">
+                            <img src="../assets/images/thumbnel_2.jpg" alt="Thumbnel">
+                            <button type="button" class="close_btn"></button>
+                          </div>
+                          <div class="thumbnel_holder" (click)="open(open_big_image)">
+                            <img src="../assets/images/thumbnel_3.jpg" alt="Thumbnel">
+                            <button type="button" class="close_btn"></button>
+                          </div>
+                        </div>
+                      </ng-template>
+                      <ng-template ngbSlide>
+                        <div class="img_and_video_thumbnel_holder border-bottom-none">
+                          <div class="thumbnel_holder" (click)="open(open_big_image)">
+                            <img src="../assets/images/thumbnel_2.jpg" alt="Thumbnel">
+                            <button type="button" class="close_btn"></button>
+                          </div>
+                          <div class="thumbnel_holder" (click)="open(open_big_image)">
+                            <img src="../assets/images/thumbnel_3.jpg" alt="Thumbnel">
+                            <button type="button" class="close_btn"></button>
+                          </div>
+                          <div class="thumbnel_holder" (click)="open(open_big_image)">
+                            <img src="../assets/images/thumbnel_1.jpg" alt="Thumbnel">
+                            <button type="button" class="close_btn"></button>
+                          </div>
+                        </div>
+                      </ng-template>
+                      <ng-template ngbSlide>
+                        <div class="img_and_video_thumbnel_holder border-bottom-none">
+                          <div class="thumbnel_holder" (click)="open(open_big_image)">
+                            <img src="../assets/images/thumbnel_3.jpg" alt="Thumbnel">
+                            <button type="button" class="close_btn"></button>
+                          </div>
+                          <div class="thumbnel_holder" (click)="open(open_big_image)">
+                            <img src="../assets/images/thumbnel_1.jpg" alt="Thumbnel">
+                            <button type="button" class="close_btn"></button>
+                          </div>
+                          <div class="thumbnel_holder" (click)="open(open_big_image)">
+                            <img src="../assets/images/thumbnel_2.jpg" alt="Thumbnel">
+                            <button type="button" class="close_btn"></button>
+                          </div>
+                        </div>
+                      </ng-template>
+                    </ngb-carousel>
+                    <ul class="form_holder">
+                      <li class="no_border custom_check_and_radio">
+                        <label class="width_half margin_right_30">Discount*</label>
+                        <span class="check_and_radio_holder"><input type="radio" name="discount_strategy" id="flat_discount"><label for="flat_discount">Flat Discount</label></span>
+                        <span class="check_and_radio_holder"><input type="radio" name="discount_strategy" id="percentage_discount"><label for="percentage_discount">% Discounts</label></span>
+                        <span class="check_and_radio_holder"><input type="radio" name="discount_strategy" id="others_discount"><label for="others_discount">Others</label></span>
+                      </li>
+                      <li class="no_border">
+                        <div class="quarter margin_right_30">
+                          <input placeholder="Discount Value" type="number">
+                        </div>
+                        <div class="quarter quarter-3">
+                          <input type="text" placeholder="Discount T&C">
+                        </div>
+                      </li>
+                    </ul>
+                    <a routerLink="/registration/step2/addmoreinfo" class="button_custom violet_btn">Submit</a>
+                    <button type="button" class="text-uppercase skip-button">Skip</button>
                   </form>
                 </div>
               </div>
@@ -80,8 +161,6 @@
       <ng-template #open_big_image let-c="close" let-d="dismiss" class="modal_controller">
           <div class="modal-body">
             <button type="button" class="close close_btn model_close" aria-label="Close" (click)="d('Cross click')"></button>
-              
-            
             <!-- Image Goes Here -->
             <div class="fancy_box">
               <img src="/assets/images/thumbnel_1.jpg" alt="Big Image">

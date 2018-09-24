@@ -91,6 +91,7 @@
     border:2px solid rgba(255,255,255,0.5);
     box-shadow: 5px 0 38px rgba(157,157,157,0.20);
     display: inline-block;
+    cursor: pointer;
 }
 .thumbnel_holder > img{
     max-width: 100%;
