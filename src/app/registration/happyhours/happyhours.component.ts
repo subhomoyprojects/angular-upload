@@ -8,12 +8,12 @@ import {FormControl} from '@angular/forms';
 // Multy Select Form
 
 @Component({
-  selector: 'app-addoffers',
-  templateUrl: './addoffers.component.html',
-  styleUrls: ['./addoffers.component.css'],
+  selector: 'app-happyhours',
+  templateUrl: './happyhours.component.html',
+  styleUrls: ['./happyhours.component.css'],
   providers: [NgbModalConfig, NgbModal]
 })
-export class AddoffersComponent implements OnInit {
+export class HappyhoursComponent implements OnInit {
 
   constructor(config: NgbModalConfig, private modalService: NgbModal) {
     // customize default values of modals used by this component tree
@@ -23,6 +23,7 @@ export class AddoffersComponent implements OnInit {
 
   ngOnInit() {
   }
+  
 // Ng Modal
   open(open_big_image) {
     this.modalService.open(open_big_image);

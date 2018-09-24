@@ -7,6 +7,7 @@ import { BasicdetailsComponent } from '../registration/basicdetails/basicdetails
 import { AdddrinksComponent } from '../registration/adddrinks/adddrinks.component';
 import { AddmoreinformationComponent } from '../registration/addmoreinformation/addmoreinformation.component';
 import { AddoffersComponent } from '../registration/addoffers/addoffers.component';
+import { HappyhoursComponent } from '../registration/happyhours/happyhours.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/registration/step1', pathMatch: 'full' },
@@ -15,7 +16,8 @@ const routes: Routes = [
   { path: 'registration/step2/basicdetails', component: BasicdetailsComponent },
   { path: 'registration/step2/adddrinks', component: AdddrinksComponent },
   { path: 'registration/step2/addmoreinfo', component: AddmoreinformationComponent },
-  { path: 'registration/step2/addoffers', component: AddoffersComponent }
+  { path: 'registration/step2/addoffers', component: AddoffersComponent },
+  { path: 'registration/step2/happyhours', component: HappyhoursComponent }
 ];
 
 @NgModule({

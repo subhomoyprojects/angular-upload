@@ -26,6 +26,7 @@ import { BasicdetailsComponent } from './registration/basicdetails/basicdetails.
 import { AdddrinksComponent } from './registration/adddrinks/adddrinks.component';
 import { AddmoreinformationComponent } from './registration/addmoreinformation/addmoreinformation.component';
 import { AddoffersComponent } from './registration/addoffers/addoffers.component';
+import { HappyhoursComponent } from './registration/happyhours/happyhours.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -36,7 +37,8 @@ import { AddoffersComponent } from './registration/addoffers/addoffers.component
     BasicdetailsComponent,
     AdddrinksComponent,
     AddmoreinformationComponent,
-    AddoffersComponent
+    AddoffersComponent,
+    HappyhoursComponent
   ],
   imports: [
     BrowserModule,
