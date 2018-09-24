@@ -15,6 +15,22 @@
                         <label class="width_half margin_right_30">Offer available on</label>
                         <span class="check_and_radio_holder"><input type="radio" name="speciality_drinks" id="drinks"><label for="drinks">Drinks</label></span>
                         <span class="check_and_radio_holder"><input type="radio" name="speciality_drinks" id="drinks_type"><label for="drinks_type">Drink Type</label></span>
+                        <div class="common_drinks_holder choose_drinks_holder">
+                          <mat-form-field>
+                            <mat-select placeholder="Offer on Drink type" [formControl]="toppings" multiple>
+                              <mat-select-trigger>
+                                {{toppings.value ? toppings.value[0] : ''}}
+                                <span *ngIf="toppings.value?.length > 1" class="example-additional-selection">
+                                  (+{{toppings.value.length - 1}} {{toppings.value?.length === 2 ? 'other' : 'others'}})
+                                </span>
+                              </mat-select-trigger>
+                              <mat-option *ngFor="let topping of toppingList" [value]="topping">{{topping}}</mat-option>
+                            </mat-select>
+                          </mat-form-field>
+                        </div>
+                        <div class="choose_drinks_type_holder">
+
+                        </div>
                       </li>
                       <li class="no_border">
                         <label class="width_100">Offer Valid Date*</label>

@@ -7,7 +7,14 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 // material
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+
+// Multy Select Form 
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+import {MatSelectModule} from '@angular/material/select';
+ // For Multy Select
+
 // end material
+
 
 import { AppComponent } from './app.component';
 import { Step1Component } from './registration/step1/step1.component';
@@ -35,7 +42,11 @@ import { AddoffersComponent } from './registration/addoffers/addoffers.component
     BrowserModule,
     NgbModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    FormsModule, // For Multy Select
+    ReactiveFormsModule, // For Multy Select
+    MatSelectModule // For Multy Select
+
   ],
   providers: [],
   bootstrap: [AppComponent]

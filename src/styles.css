@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:300,400,700,900|Ubuntu:300,400,500,700');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800');
-/*@import "~@angular/material/prebuilt-themes/indigo-pink.css"; angular material theme for global*/ 
+@import "~@angular/material/prebuilt-themes/indigo-pink.css"; /* angular material theme for global  */
 /*
 
     font-family: 'Lato', sans-serif;
@@ -104,6 +104,97 @@ select{
 .absolute{
     position: absolute;
 }
+.img_and_video_slider_controller{
+    max-width: 535px;
+    margin: 0 auto;
+}
+/* Multypel Form  */
+.example-additional-selection {
+    font-size: 14px;
+}
+.mat-form-field{
+    width: 100%;
+    font-family: 'Open Sans', sans-serif;
+}
+.mat-select-placeholder,
+.mat-select,
+.mat-option,
+.mat-form-field{
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    color:#686868;
+}
+.mat-select-panel {
+    margin-top: 28px;
+}
+.mat-select-trigger{
+    height: 20px;
+}
+.mat-pseudo-checkbox {
+    color: #8f2de2;
+    border-radius: 0 !important;
+}
+.mat-pseudo-checkbox.mat-pseudo-checkbox-checked, .mat-pseudo-checkbox.mat-pseudo-checkbox-indeterminate{
+    border-color:#8f2de2 !important;
+}
+.mat-option.mat-active {
+    color: #686868;
+}
+.mat-pseudo-checkbox::after,.mat-pseudo-checkbox-checked::after{
+    border: none !important;
+    width: 12px !important;
+    height: 12px !important;
+    background-color: #8f2de2 !important;
+    -webkit-transform: rotate(0deg) !important;
+    transform: rotate(0deg) !important;
+    left: 2px !important;
+    top: 2px !important;
+}
+.mat-primary .mat-pseudo-checkbox-checked, .mat-primary .mat-pseudo-checkbox-indeterminate {
+    background: transparent;
+}
+.mat-select-content, .mat-select-panel-done-animating {
+    background: #f4f4f4;
+}
+.cdk-overlay-pane{
+    transform: translateX(-50%) !important;
+    left: 50% !important;
+    overflow-x: hidden;
+}
+.ng-trigger{
+    min-width:100% !important;
+    width: 100% !important;
+}
+.mat-form-field.mat-focused.mat-primary .mat-select-arrow,
+.mat-form-field.mat-focused .mat-form-field-label,
+.mat-form-field.mat-focused.mat-primary .mat-select-arrow{
+    color:#8f2de2;
+}
+.mat-form-field.mat-focused .mat-form-field-ripple {
+    background-color: #8f2de2;
+}
+.mat-form-field-appearance-legacy .mat-form-field-underline {
+    background-color: #8f2de2;
+}
+.mat-select-arrow,
+.mat-form-field.mat-focused.mat-primary .mat-select-arrow{
+    color:transparent;
+}
+.mat-select-arrow-wrapper{
+    position: relative;
+}
+.mat-select-arrow-wrapper::after{
+    position: absolute;
+    content: "\f107";
+    font-family: 'FontAwesome';
+    color: #8f2de2;
+    font-size: 19px;
+    top: 0px;
+    right: 3px;
+    pointer-events: none;
+}
+/* Multypel Form */
+
 @media (min-width:320px) and (max-width:767px){
     .modal-dialog,.modal.show .modal-dialog {
         max-width: 500px;
@@ -172,3 +263,7 @@ select{
 }
 
 /* Add More Information */
+
+/* Add Offer Component */
+
+/* Add Offer Component */

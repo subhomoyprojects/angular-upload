@@ -1,5 +1,11 @@
 import { Component, OnInit } from '@angular/core';
-import { NgbModalConfig, NgbModal } from '@ng-bootstrap/ng-bootstrap';
+import { NgbModalConfig, NgbModal } from '@ng-bootstrap/ng-bootstrap'; // Ng Modal 
+
+// Multy Select Form 
+
+import {FormControl} from '@angular/forms';
+
+// Multy Select Form
 
 @Component({
   selector: 'app-addoffers',
@@ -17,9 +23,15 @@ export class AddoffersComponent implements OnInit {
 
   ngOnInit() {
   }
-
+// Ng Modal
   open(open_big_image) {
     this.modalService.open(open_big_image);
   }
+// Ng Modal End
+
+  // For Multy Select
+  toppings = new FormControl();
+  toppingList: string[] = ['Extra cheese', 'Mushroom', 'Onion', 'Pepperoni', 'Sausage', 'Tomato'];
+  // For Multy Select
 
 }
