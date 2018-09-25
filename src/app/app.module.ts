@@ -29,6 +29,7 @@ import { AddoffersComponent } from './registration/addoffers/addoffers.component
 import { HappyhoursComponent } from './registration/happyhours/happyhours.component';
 import { RegistrationcompletedComponent } from './registration/registrationcompleted/registrationcompleted.component';
 import { AddfoodsComponent } from './registration/addfoods/addfoods.component';
+import { DrinkcategoryComponent } from './registration/drinkcategory/drinkcategory.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -42,7 +43,8 @@ import { AddfoodsComponent } from './registration/addfoods/addfoods.component';
     AddoffersComponent,
     HappyhoursComponent,
     RegistrationcompletedComponent,
-    AddfoodsComponent
+    AddfoodsComponent,
+    DrinkcategoryComponent
   ],
   imports: [
     BrowserModule,
