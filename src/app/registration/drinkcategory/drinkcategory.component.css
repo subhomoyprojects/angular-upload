@@ -33,3 +33,71 @@
 .example-chip-list {
     width: 100%;
   }
+.super_admin_chip_holder li{
+    background-color: #fff;
+    color: #757575;
+    box-shadow: 5px 0px 21px rgba(157,157,157,0.29);
+    display: inline-block;
+    padding: 10px;
+    padding-right: 30px;
+    font-size: 15px;
+    margin:4px;
+    vertical-align: middle;
+    position: relative;
+}
+.super_admin_chip_holder li span{
+    display: inline-block;
+    vertical-align: middle;
+}
+.super_admin_chip_holder li button{
+    color: #fb655a;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    margin-left: 5px;
+    line-height: 18px;
+    vertical-align: middle;
+    position: absolute;
+    top: 13px;
+    right: 5px;
+}
+.button_custom{
+    color:#fff;
+    max-width:170px;
+    width: 100%;
+    display: block;
+    padding:10px 25px;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: all ease-in-out 0.3s;
+    cursor: pointer;
+    margin:50px auto 0;
+    text-align: center;
+}
+.violet_btn{
+    background-color: #8f2de2;
+    box-shadow: 5px 0px 38px rgba(143,45,226,0.40);
+}
+.super_admin_chip_holder{
+    margin-top: 10px;
+}
+
+/* Media Css */
+
+@media (min-width:320px) and (max-width:767px){
+    .heading_tag h1{
+        margin: 40px 0;
+    }
+    .main_wrapper {
+        padding-bottom: 30px;
+    }
+    .add_drinks_category_holder {
+        padding: 20px;
+    }
+    .super_admin_chip_holder li{
+        font-size: 14px;
+    }
+}
+
+/* Media Css */

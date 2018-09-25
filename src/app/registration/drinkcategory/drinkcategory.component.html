@@ -16,10 +16,10 @@
                                 [removable]="removable"
                                 (removed)="remove(fruit)">
                                 {{fruit}}
-                                <mat-icon matChipRemove *ngIf="removable">cancel</mat-icon>
+                                <mat-icon matChipRemove *ngIf="removable">clear</mat-icon>
                               </mat-chip>
                               <input
-                                placeholder="New fruit..."
+                                placeholder="Choose Categories"
                                 #fruitInput
                                 [formControl]="fruitCtrl"
                                 [matAutocomplete]="auto"
@@ -36,8 +36,18 @@
                           </mat-form-field>                            
                       </div>
                       <div class="superadmin-category-holder">
-
+                        <ul class="super_admin_chip_holder">
+                          <li><span>Category</span><button type="button"><mat-icon>clear</mat-icon></button></li>
+                          <li><span>Category</span><button type="button"><mat-icon>clear</mat-icon></button></li>
+                          <li><span>Category</span><button type="button"><mat-icon>clear</mat-icon></button></li>
+                          <li><span>Category abcd</span><button type="button"><mat-icon>clear</mat-icon></button></li>
+                          <li><span>Category Exm.</span><button type="button"><mat-icon>clear</mat-icon></button></li>
+                          <li><span>Cat 12345</span><button type="button"><mat-icon>clear</mat-icon></button></li>
+                          <li><span>Category</span><button type="button"><mat-icon>clear</mat-icon></button></li>
+                          <li><span>Category</span><button type="button"><mat-icon>clear</mat-icon></button></li>
+                        </ul>
                       </div>
+                      <a routerLink="/registration/step2/addmoreinfo" class="button_custom violet_btn">Next</a>
                   </div>
                 </div>
             </div>
