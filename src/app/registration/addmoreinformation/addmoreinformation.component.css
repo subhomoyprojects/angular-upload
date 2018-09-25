@@ -471,6 +471,9 @@
     .margin_right_30{
         margin-right: 24px;
     }
+    .thumbnel_holder {
+        margin-right: 10px;
+    }
 }
 @media (min-width:1200px) and (max-width:1360px){
     .thumbnel_holder {
