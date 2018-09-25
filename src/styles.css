@@ -88,7 +88,7 @@ select{
 .tringle_arrow{
     position: relative;
 }
-.tringle_arrow::before {
+.tringle_arrow::after {
     position: absolute;
     content: "\f107";
     font-family: 'FontAwesome';
