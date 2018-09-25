@@ -1,3 +1,47 @@
-<p>
-  drinkcategory works!
-</p>
+<app-header></app-header>
+<main class="main_wrapper">
+    <section class="add_drinks_category_wrapper">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-12 col-md-8 col-lg-6 col-xl-6 offset-md-2 offset-lg-3 offset-xl-3 heading_tag">
+                  <h1>Add Drink Categories</h1>
+                  <div class="add_drinks_category_holder">
+                      <h2>What do you serve at your Bar?</h2>
+                      <div class="category-input-holder">
+                        <mat-form-field class="example-chip-list">
+                            <mat-chip-list #chipList>
+                              <mat-chip
+                                *ngFor="let fruit of fruits"
+                                [selectable]="selectable"
+                                [removable]="removable"
+                                (removed)="remove(fruit)">
+                                {{fruit}}
+                                <mat-icon matChipRemove *ngIf="removable">cancel</mat-icon>
+                              </mat-chip>
+                              <input
+                                placeholder="New fruit..."
+                                #fruitInput
+                                [formControl]="fruitCtrl"
+                                [matAutocomplete]="auto"
+                                [matChipInputFor]="chipList"
+                                [matChipInputSeparatorKeyCodes]="separatorKeysCodes"
+                                [matChipInputAddOnBlur]="addOnBlur"
+                                (matChipInputTokenEnd)="add($event)">
+                            </mat-chip-list>
+                            <mat-autocomplete #auto="matAutocomplete" (optionSelected)="selected($event)">
+                              <mat-option *ngFor="let fruit of filteredFruits | async" [value]="fruit">
+                                {{fruit}}
+                              </mat-option>
+                            </mat-autocomplete>
+                          </mat-form-field>                            
+                      </div>
+                      <div class="superadmin-category-holder">
+
+                      </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<app-footer></app-footer>

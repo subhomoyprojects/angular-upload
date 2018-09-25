@@ -10,6 +10,7 @@ import { AddmoreinformationComponent } from '../registration/addmoreinformation/
 import { AddoffersComponent } from '../registration/addoffers/addoffers.component';
 import { HappyhoursComponent } from '../registration/happyhours/happyhours.component';
 import { RegistrationcompletedComponent } from '../registration/registrationcompleted/registrationcompleted.component';
+import { DrinkcategoryComponent } from '../registration/drinkcategory/drinkcategory.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/registration/step1', pathMatch: 'full' },
@@ -21,7 +22,8 @@ const routes: Routes = [
   { path: 'registration/step2/addmoreinfo', component: AddmoreinformationComponent },
   { path: 'registration/step2/addoffers', component: AddoffersComponent },
   { path: 'registration/step2/happyhours', component: HappyhoursComponent },
-  { path: 'registration/step2/rgcomplete', component: RegistrationcompletedComponent }
+  { path: 'registration/step2/rgcomplete', component: RegistrationcompletedComponent },
+  { path: 'registration/step2/drinkcategory', component: DrinkcategoryComponent }
 ];
 
 @NgModule({

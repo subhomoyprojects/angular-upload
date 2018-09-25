@@ -7,11 +7,17 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 // material
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {MatIconModule} from '@angular/material'; // Its For icon Metarial
 
 // Multy Select Form 
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {MatSelectModule} from '@angular/material/select';
  // For Multy Select
+
+ // For Chip Tag
+ import {MatChipsModule} from '@angular/material/chips';
+ import {MatAutocompleteModule} from '@angular/material';
+ // For Chip Tag End
 
 // end material
 
@@ -30,6 +36,7 @@ import { HappyhoursComponent } from './registration/happyhours/happyhours.compon
 import { RegistrationcompletedComponent } from './registration/registrationcompleted/registrationcompleted.component';
 import { AddfoodsComponent } from './registration/addfoods/addfoods.component';
 import { DrinkcategoryComponent } from './registration/drinkcategory/drinkcategory.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -53,10 +60,14 @@ import { DrinkcategoryComponent } from './registration/drinkcategory/drinkcatego
     BrowserAnimationsModule,
     FormsModule, // For Multy Select
     ReactiveFormsModule, // For Multy Select
-    MatSelectModule // For Multy Select
-
+    MatSelectModule, // For Multy Select
+    MatChipsModule, // For Chip Tag
+    MatIconModule, // For Metarial Icon (It is for metarial icon)
+    MatAutocompleteModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+  
+ }
