@@ -82,6 +82,22 @@
 .super_admin_chip_holder{
     margin-top: 10px;
 }
+.placeholder_controller{
+    position: relative;
+    display: inline-block;
+}
+.placeholder_controller span{
+    position: absolute;
+    pointer-events: none;
+    color: #8f2de2;
+    font-size: 15px;
+    top: 12px;
+    margin-left: 5px;
+    transition: all ease-in-out 0.3s;
+}
+.placeholder_controller:focus-within > span{
+    opacity: 0;
+}
 
 /* Media Css */
 

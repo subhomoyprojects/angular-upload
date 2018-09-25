@@ -18,7 +18,7 @@
                                 {{fruit}}
                                 <mat-icon matChipRemove *ngIf="removable">clear</mat-icon>
                               </mat-chip>
-                              <input
+                              <div class="placeholder_controller"><span>Choose Categories</span><input
                                 placeholder="Choose Categories"
                                 #fruitInput
                                 [formControl]="fruitCtrl"
@@ -26,7 +26,7 @@
                                 [matChipInputFor]="chipList"
                                 [matChipInputSeparatorKeyCodes]="separatorKeysCodes"
                                 [matChipInputAddOnBlur]="addOnBlur"
-                                (matChipInputTokenEnd)="add($event)">
+                                (matChipInputTokenEnd)="add($event)"></div>
                             </mat-chip-list>
                             <mat-autocomplete #auto="matAutocomplete" (optionSelected)="selected($event)">
                               <mat-option *ngFor="let fruit of filteredFruits | async" [value]="fruit">

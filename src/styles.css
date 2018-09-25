@@ -314,4 +314,7 @@ select{
 .category-input-holder .mat-form-field-appearance-legacy .mat-form-field-underline {
     background-color: #e5e5e5;
 }
+.category-input-holder .mat-form-field-label-wrapper{
+    display: none;
+}
 /* Add Drink Category Component */
