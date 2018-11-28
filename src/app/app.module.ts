@@ -19,6 +19,9 @@ import {MatSelectModule} from '@angular/material/select';
  import {MatAutocompleteModule} from '@angular/material';
  // For Chip Tag End
 
+ // For Owl Carousel
+import { CarouselModule } from 'ngx-owl-carousel-o';
+
 // end material
 
 
@@ -63,11 +66,12 @@ import { DrinkcategoryComponent } from './registration/drinkcategory/drinkcatego
     MatSelectModule, // For Multy Select
     MatChipsModule, // For Chip Tag
     MatIconModule, // For Metarial Icon (It is for metarial icon)
-    MatAutocompleteModule
+    MatAutocompleteModule, // Auto Complete Chip
+    CarouselModule // For Owl Carousel
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule {
-  
+ 
  }

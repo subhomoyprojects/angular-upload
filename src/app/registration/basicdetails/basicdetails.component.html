@@ -12,11 +12,13 @@
                         <li><input type="number" placeholder="PinCode*"></li>
                         <li class="no_border">
                           <label>Open Hours*</label>
-                          <div class="half watch_icon margin_right_30">
-                            <input placeholder="From" type="text" required>
+                          <div class="half no_border margin_right_30">
+                            <ngb-timepicker [(ngModel)]="time" [meridian]="meridian" name="time"></ngb-timepicker>
                           </div>
-                          <div class="half watch_icon">
-                            <input placeholder="To" type="text" required>
+                          <div class="half no_border">
+                            <div class="input-group">
+                              <ngb-timepicker [(ngModel)]="time1" [meridian]="meridian" name="time1"></ngb-timepicker>
+                            </div>
                           </div>
                         </li>
                         <li><a routerLink="/registration/step2/addmoreinfo" class="button_custom violet_btn">Next</a></li>

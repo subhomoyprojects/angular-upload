@@ -11,7 +11,7 @@
                       <input id="uploadFile" style="display: none;" type="file">
                       <button type="button" class="upload_file" onclick="document.getElementById('uploadFile').click();"><span class="plus_icon"></span><span>Add Pictures</span></button>
                     </div>
-                    <ngb-carousel class="img_and_video_slider_controller" [interval]=0>
+                    <!-- <ngb-carousel class="img_and_video_slider_controller" [interval]=0>
                       <ng-template ngbSlide>
                         <div class="img_and_video_thumbnel_holder">
                           <div class="thumbnel_holder" (click)="open(open_big_image)">
@@ -60,12 +60,39 @@
                           </div>
                         </div>
                       </ng-template>
-                    </ngb-carousel>
+                    </ngb-carousel> -->
+                    <div class="mt-4 owl-controler">
+                      <owl-carousel-o class="img_and_video_slider_controller" [options]="owl1">
+                        
+                        <ng-template carouselSlide id="owl-slide-1">
+                          <div class="thumbnel_holder" (click)="open(open_big_image)">
+                            <img src="../assets/images/thumbnel_1.jpg" alt="Thumbnel">
+                            <button type="button" class="video_icon"></button>
+                            <button type="button" class="close_btn"></button>
+                          </div>
+                        </ng-template>  
+                        <ng-template carouselSlide id="owl-slide-2">
+                          <div class="thumbnel_holder" (click)="open(open_big_image)">
+                            <img src="../assets/images/thumbnel_2.jpg" alt="Thumbnel">
+                            <button type="button" class="video_icon"></button>
+                            <button type="button" class="close_btn"></button>
+                          </div>
+                        </ng-template>  
+                        <ng-template carouselSlide id="owl-slide-3">
+                          <div class="thumbnel_holder" (click)="open(open_big_image)">
+                            <img src="../assets/images/thumbnel_3.jpg" alt="Thumbnel">
+                            <button type="button" class="video_icon"></button>
+                            <button type="button" class="close_btn"></button>
+                          </div>
+                        </ng-template> 
+                        
+                      </owl-carousel-o>
+                    </div>
                     <div class="file_type_controller">
                       <input id="uploadFile" style="display: none;" type="file">
                       <button type="button" class="upload_file margin_top_40" onclick="document.getElementById('uploadFile').click();"><span class="plus_icon"></span><span>Add Videos</span></button>
                     </div>
-                    <ngb-carousel class="img_and_video_slider_controller" [interval]=0>
+                    <!-- <ngb-carousel class="img_and_video_slider_controller" [interval]=0>
                       <ng-template ngbSlide>
                         <div class="img_and_video_thumbnel_holder">
                           <div class="thumbnel_holder" (click)="open(open_big_image)">
@@ -123,7 +150,41 @@
                           </div>
                         </div>
                       </ng-template>
-                    </ngb-carousel>
+                    </ngb-carousel> -->
+                    <div class="mt-4 owl-controler">
+                      <owl-carousel-o class="img_and_video_slider_controller" [options]="owl2">
+                        <ng-template carouselSlide id="owl-slide-4">
+                          <div class="thumbnel_holder" (click)="open(open_big_image)">
+                            <img src="../assets/images/thumbnel_1.jpg" alt="Thumbnel">
+                            <button type="button" class="video_icon"></button>
+                            <button type="button" class="close_btn"></button>
+                          </div>
+                        </ng-template>  
+                        <ng-template carouselSlide id="owl-slide-5">
+                          <div class="thumbnel_holder" (click)="open(open_big_image)">
+                            <img src="../assets/images/thumbnel_2.jpg" alt="Thumbnel">
+                            <button type="button" class="video_icon"></button>
+                            <button type="button" class="close_btn"></button>
+                          </div>
+                        </ng-template>  
+                        <ng-template carouselSlide id="owl-slide-6">
+                          <div class="thumbnel_holder" (click)="open(open_big_image)">
+                            <img src="../assets/images/thumbnel_3.jpg" alt="Thumbnel">
+                            <button type="button" class="video_icon"></button>
+                            <button type="button" class="close_btn"></button>
+                          </div>
+                        </ng-template> 
+                        <ng-template carouselSlide id="owl-slide-6">
+                          <div class="thumbnel_holder" (click)="open(open_big_image)">
+                            <img src="../assets/images/thumbnel_3.jpg" alt="Thumbnel">
+                            <button type="button" class="video_icon"></button>
+                            <button type="button" class="close_btn"></button>
+                          </div>
+                        </ng-template> 
+                        
+                      </owl-carousel-o>
+                    </div>
+
                       <ul class="margin_top_40 form_holder">
                         <li><textarea  placeholder="Add Description* (100 Words)"></textarea></li>
                         <li class="no_border custom_check_and_radio">

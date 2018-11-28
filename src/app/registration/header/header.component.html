@@ -13,16 +13,16 @@
       <div class="row">
         <div class="col-12">
           <ul class="flow_line_pointer_wrapper">
-            <li class="active">
+            <li [routerLinkActive]="['active']">
               <div routerLink="/registration/step2/subscription"><span>1</span><strong>Subscription Plan</strong></div>
             </li>
-            <li>
+            <li [routerLinkActive]="['active']">
               <div routerLink="/registration/step2/basicdetails"><span>2</span><strong>Basic Details</strong></div>
             </li>
-            <li>
+            <li [routerLinkActive]="['active']">
               <div routerLink="/registration/step2/addfoods"><span>3</span><strong>Add Drinks & Foods</strong></div>
             </li>
-            <li>
+            <li [routerLinkActive]="['active']">
               <div routerLink="/registration/step2/happyhours"><span>4</span><strong>Add Special Offers</strong></div>
             </li>
           </ul>

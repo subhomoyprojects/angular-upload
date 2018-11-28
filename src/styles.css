@@ -161,10 +161,10 @@ select{
     left: 50% !important;
     overflow-x: hidden;
 }
-.ng-trigger{
+/* .ng-trigger{
     min-width:100% !important;
     width: 100% !important;
-}
+} */
 .mat-form-field.mat-focused.mat-primary .mat-select-arrow,
 .mat-form-field.mat-focused .mat-form-field-label,
 .mat-form-field.mat-focused.mat-primary .mat-select-arrow{
@@ -318,3 +318,32 @@ select{
     display: none;
 }
 /* Add Drink Category Component */
+
+/* Owl Controler */
+
+.owl-controler .owl-nav{
+    top: 50%;
+    margin-top: -10px;
+    position: absolute;
+    width: 100%;
+}
+.owl-theme .owl-nav [class*="owl-"] {
+    margin: 0;
+    border-radius: 0;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    padding: 0;
+    background-color: rgba(0,0,0,0.5);
+    color: #fff;
+}
+.owl-carousel .owl-nav .owl-prev{
+    left: 0;
+}
+.owl-carousel .owl-nav .owl-next{
+    right: 0;
+}
+
+/* Owl Controller */

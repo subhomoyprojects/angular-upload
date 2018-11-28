@@ -92,6 +92,7 @@
     box-shadow: 5px 0 38px rgba(157,157,157,0.20);
     display: inline-block;
     cursor: pointer;
+    margin-top: 20px;
 }
 .thumbnel_holder > img{
     max-width: 100%;
@@ -403,6 +404,7 @@
     max-width: 535px;
     margin: 0 auto;
 }
+
 @media (min-width:320px) and (max-width:767px){
     .heading_tag h1{
         margin: 40px 0;

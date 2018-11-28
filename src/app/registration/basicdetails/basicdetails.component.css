@@ -60,6 +60,12 @@
     border-bottom: 1px solid #8f2de2;
     position: relative;
 }
+.basic_details_form_holder li.no_border .half.no_border{
+    border-bottom:none;
+}
+.basic_details_form_holder li.no_border .half.no_border::after{
+    display: none;
+}
 .basic_details_form_holder li::after,
 .basic_details_form_holder li.no_border .half::after{
     width:0;
@@ -140,6 +146,10 @@
 .violet_btn{
     background-color: #8f2de2;
     box-shadow: 5px 0px 38px rgba(143,45,226,0.40);
+}
+.basic_details_form_holder li .btn-outline-primary{
+    color: #8f2de2;
+    border-color: #8f2de2;
 }
 @media (min-width:320px) and (max-width:767px){
     .heading_tag h1{
