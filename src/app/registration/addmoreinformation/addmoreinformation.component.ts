@@ -25,6 +25,8 @@ export class AddmoreinformationComponent implements OnInit {
     this.modalService.open(open_big_image);
   }
 
+  isCollapsed = false;
+
  // For Owl Carousal
 
  owl1: any = {
