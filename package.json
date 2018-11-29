@@ -57,7 +57,7 @@
     "typescript": "~2.9.2"
   },
   "engines": {
-    "node": "type version",
-    "npm": "type version"
+    "node": "v11.1.0",
+    "npm": "6.4.1"
   }
 }
