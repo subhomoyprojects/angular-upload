@@ -36,8 +36,8 @@
                         <label class="width_100">Offer Valid Date*</label>
                         <div class="half calender_icon margin_right_30">
                           <div class="input-group">
-                            <input class="form-control" placeholder="Form"
-                                   name="dp1" [(ngModel)]="dp1" ngbDatepicker #d1="ngbDatepicker" (focus)="d1.toggle()">
+                            <input class="form-control" type="text" placeholder="Form"
+                                   name="dp1" [(ngModel)]="date" ngbDatepicker #d1="ngbDatepicker" (focus)="d1.toggle()">
                             <!-- <div class="input-group-append">
                               <button class="btn btn-outline-secondary calendar" (click)="d1.toggle()" type="button"></button>
                             </div> -->
@@ -45,8 +45,8 @@
                         </div>
                         <div class="half calender_icon">
                           <div class="input-group">
-                            <input class="form-control" placeholder="To"
-                                   name="dp2" [(ngModel)]="dp2" ngbDatepicker #d2="ngbDatepicker" (focus)="d2.toggle()">
+                            <input class="form-control" type="text" placeholder="To"
+                                   name="dp2" [(ngModel)]="date" ngbDatepicker #d2="ngbDatepicker" (focus)="d2.toggle()">
                             <!-- <div class="input-group-append">
                               <button class="btn btn-outline-secondary calendar" (click)="d2.toggle()" type="button"></button>
                             </div> -->
